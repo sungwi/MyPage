@@ -158,11 +158,17 @@ p,a {
 .sns a {
     text-decoration: none;
     vertical-align: middle;
+    color: #404048;
+}
+
+.sns a:hover {
+    font-weight: bold;
 }
 
 .sns img{
     vertical-align: middle;
 }
+
 
 .COMINGSOON {
     font-family: 'Monaco';
