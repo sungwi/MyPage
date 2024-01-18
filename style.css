@@ -12,7 +12,9 @@
     background-color: #1a1a1a; /* Darker header background in dark mode */
 }
 
-
+.dark-mode nav ul li a {
+    color:white;
+}
 
 header {
     position:fixed;
@@ -21,11 +23,15 @@ header {
     width:100%;
     background-color: white;
     z-index: 1000;
-    padding:20px 30px;
+    padding:70px;
     font-family: Monaco;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #darkModeToggle {
+    position: relative;
     background: none;
     border: none;
     cursor: pointer;
@@ -36,13 +42,23 @@ header {
     width: 100px;  
     height: 100px; 
     object-fit: contain;
+    position: absolute;
+}
+
+#darkmode {
+    left:50px;
+    transform: translate(-5px, -70px);
+}
+
+#darkIcon {
+    left:110px;
+    transform: translate(3px, -10px);
 }
 
 
 nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
 }
 
 nav ul {
@@ -50,10 +66,22 @@ nav ul {
     margin:0;
     padding:0;
     display:flex;
+    font-size: 25px;
 }
 
 nav ul li {
     margin-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #404048;
+    font-family: 'Monaco';
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: black;
 }
 
 nav button {
@@ -63,6 +91,19 @@ nav button {
     color:black;
     font-size: 24px;
     padding-right: 60px;
+}
+
+.container {
+    padding-top: 30px;
+}
+
+.container iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 850px;
+    height: 900px;
+    border:none;
 }
 
 .container > div {
@@ -121,4 +162,9 @@ p,a {
 
 .sns img{
     vertical-align: middle;
+}
+
+.COMINGSOON {
+    font-family: 'Monaco';
+    font-size: 20px;
 }
