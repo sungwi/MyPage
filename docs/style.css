@@ -95,6 +95,7 @@ nav button {
 
 .container {
     padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container iframe {
@@ -169,8 +170,64 @@ p,a {
     vertical-align: middle;
 }
 
-
-.COMINGSOON {
-    font-family: 'Monaco';
-    font-size: 20px;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20px, 1fr));
+    gap:10px;
+    padding: 20px;
+    max-width: 50%;
+    margin: auto;
+    justify-items: center;
 }
+
+.project {
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin:10px;
+    align-items: center;
+  }
+
+  .project-detail img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    
+  }
+
+  .project-description {
+    padding: 15px;
+    text-align: center;
+    color: #1a1a1a;
+  }
+
+  .project a {
+    text-decoration: none;
+  }
+
+  .dark-mode .project {
+    background-color:#1a1a1a
+  }
+
+  .dark-mode .project-description {
+    color: white;
+  }
+
+ .eachWork {
+     margin-bottom: 100px;
+ }
+
+  .eachWork a {
+    text-decoration: none;
+    color: gray;
+  }
+
+  .eachWork span {
+      font-size:20px;
+      font-weight: bold;
+  }
+
+  .eachWorkDescription {
+      margin-top: 20px;
+  }
