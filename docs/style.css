@@ -39,10 +39,14 @@ header {
 }
 
 #darkModeToggle img {
-    width: 100px;  
-    height: 100px; 
+    width: 60px;  
+    height: 60px;
     object-fit: contain;
     position: absolute;
+    transform: translate(10px, -25px);
+    background: none;
+    border-radius: 50%;
+    z-index: 1; /* Higher than the background */
 }
 
 #darkmode {
@@ -50,10 +54,6 @@ header {
     transform: translate(-5px, -70px);
 }
 
-#darkIcon {
-    left:110px;
-    transform: translate(3px, -10px);
-}
 
 
 nav {
@@ -220,14 +220,88 @@ p,a {
 
   .eachWork a {
     text-decoration: none;
-    color: gray;
+    color: dimgray;
+  }
+
+  .dark-mode .eachWork a {
+      color: silver;
+  }
+
+  .eachWork a:hover {
+    font-weight: bold;
+    color: dimgray;
   }
 
   .eachWork span {
-      font-size:20px;
-      font-weight: bold;
+    font-size:20px;
+    font-weight: bold;
   }
 
   .eachWorkDescription {
-      margin-top: 20px;
+    padding: 20px;
+  }
+
+  .property {
+    margin: 0 auto;
+  }
+
+  .badge {
+    text-transform: uppercase;
+    color:rgb(63, 112, 77);
+    background-color:rgba(154, 230, 180, 0.16);
+    padding: 4px 8px;
+    border-radius: 7px;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  .dark-mode .badge {
+    color:#9ae6b4;
+    background-color:rgba(154, 230, 180, 0.16);
+  }
+
+  .appLink {
+      text-decoration: none;
+      color:black;
+  }
+
+  .dark-mode .appLink {
+      color:white;
+  }
+
+  .appLink:hover {
+      text-decoration: underline;
+  }
+
+  .appLink::after {
+    content: '';
+    display: inline-block;
+    width: 20px; /* or the size of your actual icon */
+    height: 19px; /* or the size of your actual icon */
+    background-image: url('../icons/url.svg'); /* replace with your actual icon path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+    left:2px;
+    top:2px;
+  }
+
+  .appImage {
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto; 
+  }
+
+  .resume {
+    display: flex;
+    justify-content: center; /* This centers the child elements (images) horizontally */
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .resume img {
+    width:50%;
+    height:auto;
+    margin-top: 10px;
   }
