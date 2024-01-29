@@ -162,6 +162,10 @@ p,a {
     color: #404048;
 }
 
+.dark-mode .sns a {
+    color:white;
+}
+
 .sns a:hover {
     font-weight: bold;
 }
